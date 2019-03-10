@@ -1,0 +1,25 @@
+A = magic(10);
+x = ones(10, 1);
+v = zeros(10, 1);
+for i = 1:10
+  for j = 1:10
+    v(i) = v(i) + A(i, j) * x(j);
+  end
+end
+
+w = 5 * ones(7, 1);
+v = 2 * ones(7, 1);
+z = 0;
+for i = 1:7
+  z = z + v(i) * w(i);
+end
+
+X = magic(7)
+for i = 1:7
+  for j = 1:7
+    A(i, j) = log(X(i, j));
+    B(i, j) = X(i, j) ^ 2;
+    C(i, j) = X(i, j) + 1;
+    D(i, j) = X(i, j) / 4;
+  end
+end
